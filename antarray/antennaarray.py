@@ -106,7 +106,7 @@ class AntennaArray:
 
         AF = np.zeros(np.shape(u_grid), dtype=complex)
 
-        for idx in range(0, size):
+        for idx in range(size):
             AF = AF + \
                 np.exp(-1j * 2 * np.pi *
                        (self.x[idx]*u_grid + self.y[idx]*v_grid)) * weight[idx]
